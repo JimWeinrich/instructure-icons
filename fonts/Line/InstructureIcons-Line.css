@@ -1,10 +1,10 @@
 @font-face {
   font-family: "InstructureIcons-Line";
-  src: url('InstructureIcons-Line.eot');
-  src: url('InstructureIcons-Line.eot?#iefix') format('eot'),
-    url('InstructureIcons-Line.woff') format('woff'),
-    url('InstructureIcons-Line.ttf') format('truetype'),
-    url('InstructureIcons-Line.svg#InstructureIcons-Line') format('svg');
+  src: url('./InstructureIcons-Line.eot');
+  src: url('./InstructureIcons-Line.eot?#iefix') format('eot'),
+    url('./InstructureIcons-Line.woff') format('woff'),
+    url('./InstructureIcons-Line.ttf') format('truetype'),
+    url('./InstructureIcons-Line.svg#InstructureIcons-Line') format('svg');
   font-weight: normal;
   font-style: normal;
 }

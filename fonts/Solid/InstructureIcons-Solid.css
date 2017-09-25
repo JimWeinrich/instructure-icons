@@ -1,10 +1,10 @@
 @font-face {
   font-family: "InstructureIcons-Solid";
-  src: url('InstructureIcons-Solid.eot');
-  src: url('InstructureIcons-Solid.eot?#iefix') format('eot'),
-    url('InstructureIcons-Solid.woff') format('woff'),
-    url('InstructureIcons-Solid.ttf') format('truetype'),
-    url('InstructureIcons-Solid.svg#InstructureIcons-Solid') format('svg');
+  src: url('./InstructureIcons-Solid.eot');
+  src: url('./InstructureIcons-Solid.eot?#iefix') format('eot'),
+    url('./InstructureIcons-Solid.woff') format('woff'),
+    url('./InstructureIcons-Solid.ttf') format('truetype'),
+    url('./InstructureIcons-Solid.svg#InstructureIcons-Solid') format('svg');
   font-weight: normal;
   font-style: normal;
 }
