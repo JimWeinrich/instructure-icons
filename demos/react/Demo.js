@@ -8,24 +8,30 @@ const icons = {};
 const variants = [];
 
 
-variants.push('Line');
+  variants.push('Line');
 
-Object.keys(InstructureIconsLine).map(compName => {
-  const name = compName.substring(0, compName.indexOf('Line'));
-  icons[name] = icons[name] || []
-  icons[name].push(InstructureIconsLine[compName])
-})
+  Object.keys(InstructureIconsLine).map(compName => {
+    const name = compName.substring(0, compName.indexOf('Line'));
+    icons[name] = icons[name] || { name, variants: [] }
+    icons[name].variants.push({
+      name: 'Line',
+      component: InstructureIconsLine[compName]
+    })
+  })
 
-variants.push('Solid');
+  variants.push('Solid');
 
-Object.keys(InstructureIconsSolid).map(compName => {
-  const name = compName.substring(0, compName.indexOf('Solid'));
-  icons[name] = icons[name] || []
-  icons[name].push(InstructureIconsSolid[compName])
-})
+  Object.keys(InstructureIconsSolid).map(compName => {
+    const name = compName.substring(0, compName.indexOf('Solid'));
+    icons[name] = icons[name] || { name, variants: [] }
+    icons[name].variants.push({
+      name: 'Solid',
+      component: InstructureIconsSolid[compName]
+    })
+  })
 
 
-const glyphs = Object.keys(icons).map((name) => Object.assign({}, {name, variants: icons[name]}));
+const glyphs = Object.keys(icons).map((name) => icons[name]);
 
 glyphs.sort(function(a, b) {
   var nameA = a.name.toUpperCase();
